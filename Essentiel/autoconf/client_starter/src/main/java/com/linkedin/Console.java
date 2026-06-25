@@ -9,11 +9,8 @@ import com.linkedin.service.LogService;
 @Component
 public class Console implements CommandLineRunner{
 
-    private final LogService logService;
-
-    public Console(LogService logService){
-        this.logService=logService;
-    }
+    @Autowired
+    private LogService logService;
 
     @Override
     public void run(String... args) throws Exception {
