@@ -2,16 +2,16 @@ package com.linkedin.web;
 
 import java.util.List;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.linkedin.data.User;
 import com.linkedin.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-@Controller
+@RestController
 @RequestMapping("/")
 public class UserController {
 
@@ -23,10 +23,8 @@ public class UserController {
     }
 
     @GetMapping("users")
-    public String getUsers(Model model) {
-        List<User> users = userService.getAllUsers();
-        model.addAttribute("users", users);
-        return "UserView";
+    public List<User> getUsers() {
+        return userService.getAllUsers();        
     }
     
 }
