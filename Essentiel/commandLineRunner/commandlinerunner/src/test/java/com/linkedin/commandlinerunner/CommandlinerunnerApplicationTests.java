@@ -1,10 +1,10 @@
-package com.linkedin.demo_mvc;
+package com.linkedin.commandlinerunner;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoMvcApplicationTests {
+class CommandlinerunnerApplicationTests {
 
 	@Test
 	void contextLoads() {
