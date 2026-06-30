@@ -1,7 +1,6 @@
 
 package com.linkedin.actuator;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.info.Info.Builder;
 import org.springframework.boot.actuate.info.InfoContributor;
 import org.springframework.stereotype.Component;
@@ -13,7 +12,6 @@ public class TotalUsersInfo implements InfoContributor{
 
     private final UserRepository repository;
 
-    @Autowired
     public TotalUsersInfo(UserRepository repository){
         this.repository=repository;
     }
