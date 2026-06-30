@@ -1,10 +1,10 @@
-package com.linkedin.test_spring_boot;
+package com.linkedin.demo_mvc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestSpringBootApplicationTests {
+class DemoMvcApplicationTests {
 
 	@Test
 	void contextLoads() {
