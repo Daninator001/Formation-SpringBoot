@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RoomWebAppApplication",
+            "request": "launch",
+            "mainClass": "com.drade.training.room_web_app.RoomWebAppApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "RoomClrApplication",
             "request": "launch",
             "mainClass": "com.drade.training.room_clr.RoomClrApplication",
